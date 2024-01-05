@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 2</title>
+    <style>
+         @keyframes girar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .noria {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: 100px auto;
+            animation: girar 10s linear infinite;
+        }
+
+        .cabina {
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+        }
+        .cabina:nth-child(1) { transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg); }
+        .cabina:nth-child(2) { transform: translate(-50%, -50%) rotate(45deg) translate(100px) rotate(-45deg); }
+        .cabina:nth-child(3) { transform: translate(-50%, -50%) rotate(90deg) translate(100px) rotate(-90deg); }
+        .cabina:nth-child(4) { transform: translate(-50%, -50%) rotate(135deg) translate(100px) rotate(-135deg); }
+        .cabina:nth-child(5) { transform: translate(-50%, -50%) rotate(180deg) translate(100px) rotate(-180deg); }
+        .cabina:nth-child(6) { transform: translate(-50%, -50%) rotate(225deg) translate(100px) rotate(-225deg); }
+        .cabina:nth-child(7) { transform: translate(-50%, -50%) rotate(270deg) translate(100px) rotate(-270deg); }
+        .cabina:nth-child(8) { transform: translate(-50%, -50%) rotate(315deg) translate(100px) rotate(-315deg); }
+    </style>
+</head>
+<body>
+    <div class="noria">
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+        <div class="cabina"></div>
+    </div>
+    <p><a href="../Index_CSS.html">Index</a></p>
+</body>
+</html>

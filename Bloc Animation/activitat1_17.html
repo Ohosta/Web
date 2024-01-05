@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1</title>
+    <style>
+         @keyframes animacio-eclipse {
+            0%, 100% {
+                transform: translateX(-150px);
+            }
+            50% {
+                transform: translateX(0);
+            }
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .sol {
+            width: 110px;
+            height: 110px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .lluna {
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border-radius: 50%;
+            position: absolute;
+            animation: animacio-eclipse 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="sol"></div>
+    <div class="lluna"></div>
+    <p><a href="../Index_CSS.html">Index</a></p>
+</body>
+</html>

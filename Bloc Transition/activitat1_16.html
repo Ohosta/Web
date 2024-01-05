@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 1</title>
+    <style>
+       
+        form {
+            width: 300px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            border-radius: 5px;
+            transition: border 0.3s ease, transform 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+        transform: scale(1.05);
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            
+        }  
+        
+    </style>
+</head>
+<body>
+    <form>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" required>
+
+        <label for="telefon">Telèfon:</label>
+        <input type="number" name="telefon" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p><a href="../Index_CSS.html">Index</a></p>
+</body>
+</html>
