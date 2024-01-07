@@ -4,73 +4,84 @@
 <meta charset="UTF-8">
 <title>Activitat 2</title>
 <style>
-  body, html {
-    margin: 0;
-    height: 100%;
-    overflow: hidden;
-  }
+ body, html {
+  margin: 0;
+  padding: 0; 
+  height: 100%;
+  overflow: hidden;
+}
 
-  .escena {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+.escena {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000px;
+}
 
-  .paret, .terra {
+.paret {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  background-image: url('../fotos/wall.jpg');
+  background-size: cover;
+}
+
+.terra {
+  position: absolute;
+  bottom: 0;
+  width: 180%;
+  height: 123%;
+  background-image: url('../fotos/floor.jpg');
+  background-size: cover;
+  transform: rotateX(60deg); 
+  transform-origin: left;
+  margin-bottom: -20%;
+  margin-left: -30%;
+}
+
+.ovella {
+  position: absolute;
+  bottom: 25%; 
+  left: 50%;
+  width: 110px;
+  height: 110px;
+  background-image: url('../fotos/ovella.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
+.sombra {
     position: absolute;
-    width: 100%;
-    height: 50%; 
-  }
-
-  .paret {
-    top: 0;
-    background-image: url('../fotos/wall.jpg');
-    background-size: cover;
-  }
-
-  .terra {
-    bottom: 0;
-    background-image: url('../fotos/floor.jpg');
-    background-size: cover;
-  }
-
-  .ovella {
-    position: absolute;
-    bottom: 10%; 
+    bottom: 50%;
     left: 50%;
-    width: 100px; 
-    height: 100px;
-    background-image: url('../fotos/ovella.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    transform: translateX(-50%);
-  }
-
-  .sombra {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    width: 120px; 
-    height: 50px;
+    width: 100px;
+    height: 80px;
     background-color: black;
-    border-radius: 50px;
-    transform: translateX(-50%);
+    border-radius: 60%;
+    transform: translateX(-50%) scaleX(1.5); 
     filter: blur(8px);
+    z-index: 0; 
+    opacity: 60%;
   }
+
 </style>
 </head>
 <body>
 
 <div class="escena">
     <div class="paret">
-        <div class="sombra"></div>
     </div>
     <div class="terra">
-        <div class="ovella">
-            
-        </div>
+    </div>
+    <div class="ovella">
+    </div>
+    <div class="sombra">
+    </div>
+    <div class="sombra">
     </div>
 </div>
-<p><a href="../Index_CSS.html">Index</a></p>
 </body>
 </html>
