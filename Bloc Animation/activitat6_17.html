@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 6</title>
+    <style>
+        
+        @keyframes swing {
+            0%, 100% { 
+                transform: rotate(0deg); }
+            50% { 
+                transform: rotate(15deg); }
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .pendul-quadrat {
+            margin: 0 auto;
+            width: 200px;
+            height: 300px;
+            position: relative;
+            background-color: blue;
+        }
+
+        .pendul {
+            width: 10px;
+            height: 100px;
+            background-color: black;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform-origin: 50% 0; 
+            animation: swing 2s ease-in-out infinite;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="pendul-quadrat">
+        <div class="pendul"></div>
+    </div>
+<p><a href="../Index_CSS.html">Index</a></p>
+</body>
+</html>

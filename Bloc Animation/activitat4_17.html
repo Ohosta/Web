@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activitat 4</title>
+
+    <style>
+         @keyframes girar {
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .rellotge {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #333;
+            border-radius: 50px;
+            animation: girar 60s infinite linear; 
+        }
+
+        .agulla {
+            position: absolute;
+            width: 4px;
+            height: 80px;
+            background-color: black;
+            top: 50%;
+            left: 50%;
+            transform-origin: 50% 100%;
+        }
+
+        .agulla-hores {
+            background-color: blue;
+            animation: girar 3600s infinite steps(60); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="reloj">
+        <div class="agulla agulla-hores"></div> 
+    </div>
+<p><a href="../Index_CSS.html">Index</a></p>
+</body>
+</html>
