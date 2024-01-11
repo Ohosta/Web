@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #736b60;
+}
+
+#contingut-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px; 
+  position: relative;
+  justify-content: center;
+  align-items:center;
+
+}
+
+a {
+    margin: 10px;
+    text-align: center;
+    color: #ede7d9;
+}
+table  {
+  top: 50%;           
+  left: 0;      
+  border-color: #736B60;   
+  padding-top: 170px; 
+
+}
+th {
+  color: black;
+}
+td {
+border: 1px solid;
+border-color: #736B60;
+color: #a49694;
+}
+
+h1 {
+    margin: 0; 
+    padding-top: 20px; 
+    color: #ede7d9;
+    text-align: center;
+    grid-column: span 2; 
+}
+
+
+.peudepagina {
+    margin-top: auto;
+    background-color: #4b4237;
+    color: #ede7d9;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    grid-column: span 2;
+}
+.peudepaginaindex {
+  margin-top: -3px;
+  background-color: #4b4237;
+  color: #ede7d9;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  grid-column: span 2;
+}
+.contenidor-central {
+  background-color: #ede7d9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  width: 800px;
+  height: 500px;
+  margin: 140px auto;
+  padding: 90px 30px;
+}
+
+
+
+footer {
+    background-color: #4b4237;
+    padding: 20px;
+    text-align: center;
+    grid-column: span 2; 
+
+}
+.imatgeindex {
+  text-align: center;
+  padding-top: 34px;
+}
+
+.imatgeindex img {
+  max-width: 100%;
+  height: auto;
+}
+
+fieldset {    
+  float: right;
+  width: fit-content;   
+  max-width: 90%;      
+  color:#a49694; 
+  border-color:#736B60;
+  
+}
+
+legend {
+  font-size: 29px;
+  color: #736B60;
+}
+img.html-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    grid-column: 1; 
+}
+.imatge-altres {
+  height: auto;
+  width: 33px;
+}
+img.css-image {
+    max-width: 71%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    grid-column: 2; 
+} 
+.navbar img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+  transform: translateY(10px); 
+}
+.navbar {
+    margin: 0 auto;
+    width: 100%; 
+    background-color: #555;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top:0;
+    position: absolute;
+    padding-bottom:10px;
+  }
+  
+  .navbar a {
+    padding: 12px;
+    color: #ede7d9;
+    display: inline-block;
+    font-size: 17px;
+    margin:0 15px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+}
+
+  
+  
