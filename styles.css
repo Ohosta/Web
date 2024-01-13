@@ -72,7 +72,9 @@ h1 {
   padding: 90px 30px;
 }
 
-
+.fletxa {
+  margin-top: 200px;
+}
 
 footer {
     background-color: #4b4237;
@@ -87,9 +89,22 @@ footer {
 }
 
 .imatgeindex img {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
+ 
 }
+.imatgewire {
+  text-align: center;
+  margin-top:-80px ;
+  margin-bottom:40px ;
+}
+.fletxa img {
+  width: 50px; 
+  height: auto; 
+}
+
+
+
 
 fieldset {    
   float: right;
@@ -160,6 +175,25 @@ img.css-image {
       display: block;
     }
 }
+.fletxa-esquerra, .fletxa-dreta {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  font-size: 24px; 
+  cursor: pointer;
+  text-decoration: none; 
 
+}
+
+.fletxa-esquerra {
+  float: left;
   
+}
+
+.fletxa-dreta {
+  float: right;
+ 
+}
+
+
   
