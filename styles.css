@@ -43,7 +43,17 @@ h1 {
     text-align: center;
     grid-column: span 2; 
 }
-
+  h2{
+    text-align: center;
+  }
+  .sobremitext {
+    text-align: center;
+    font-family: Cambria, Garamond, Arial o Georgia;
+    padding-top: 92px;
+    padding-bottom: 0;
+    position: relative;
+    margin-bottom: 102px;
+  }
 
 .peudepagina {
     margin-top: auto;
@@ -70,6 +80,14 @@ h1 {
   height: 500px;
   margin: 140px auto;
   padding: 90px 30px;
+}
+.titolsobremi {
+  background-color: #ede7d9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  width: 330px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 0;
 }
 
 .fletxa {
